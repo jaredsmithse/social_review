@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20131005223944) do
   create_table "employees", force: true do |t|
     t.string  "name"
     t.string  "company"
-    t.integer "manager_id"
+    t.integer "user_id"
   end
 
   create_table "reviews", force: true do |t|
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20131005223944) do
     t.string  "date"
     t.string  "sentiment"
     t.integer "likes"
+    t.integer "user_id"
   end
 
   create_table "shifts", force: true do |t|
