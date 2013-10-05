@@ -15,6 +15,9 @@ gem 'pg'
 gem 'foreman'
 gem 'sendgrid'
 gem 'simple_form', '>= 3.0.0.rc'
+gem 'oauth'
+gem 'foursquare2'
+
 
 group :development do
   gem 'better_errors'
