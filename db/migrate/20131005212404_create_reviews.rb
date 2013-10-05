@@ -6,6 +6,7 @@ class CreateReviews < ActiveRecord::Migration
     	t.string :date
     	t.string :sentiment
     	t.integer :likes
+    	t.integer :user_id
     end
   end
 end
