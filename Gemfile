@@ -12,6 +12,7 @@ gem 'devise'
 gem 'figaro'
 gem 'haml-rails'
 gem 'pg'
+gem 'foreman'
 gem 'sendgrid'
 gem 'simple_form', '>= 3.0.0.rc'
 group :development do
