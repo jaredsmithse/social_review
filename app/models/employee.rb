@@ -1,4 +1,4 @@
 class Employee < ActiveRecord::Base
-	has_many :shifts, through: :employeeshifts
+	has_and_belongs_to_many :shifts
 	belongs_to :user
 end

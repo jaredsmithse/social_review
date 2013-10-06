@@ -1,3 +1,3 @@
 class Shift < ActiveRecord::Base
-	has_many :shifts, through: :employeeshifts
+	has_and_belongs_to_many :employees
 end
