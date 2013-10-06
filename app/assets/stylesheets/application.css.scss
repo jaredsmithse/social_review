@@ -23,3 +23,11 @@
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
   box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
+
+.new-employee-submit {
+  input[type=text], #date {
+	  margin-top: 10px;
+	  width: 350px;
+	  margin-right: 10px;
+  }
+}
