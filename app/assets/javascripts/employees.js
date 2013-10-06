@@ -24,6 +24,7 @@ $(document).ready( function() {
 		}).done(updateEmployees);
 	});
 
+
 	function updateEmployees(response) {
 		$('.employees').html(response);
 	}
