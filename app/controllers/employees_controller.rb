@@ -5,7 +5,7 @@ class EmployeesController < ApplicationController
   	parse_employee_data(params['name'], params['date'], params['from'], params['to'])
   	@user = current_user
   	Employee.build_report(@user.id)
-  	render 'employees/_employees', layout: false
+  	render 'users/_charts', layout: false
   end
 
   def charts
