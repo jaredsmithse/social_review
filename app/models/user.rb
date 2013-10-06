@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
 
   def update_reviews
   	self.reviews.delete_all
-  	response = HTTParty.get('https://api.foursquare.com/v2/venues/40a55d80f964a52020f31ee3?oauth_token=C552YRE13MWIXO2XM14YSKHT4LRHXABF2YE1FSEI53K4SFIZ&v=20131005')
+  	response = HTTParty.get("https://api.foursquare.com/v2/venues/#{self.venue_id}&client_id=#{ENV['FOURSQUARE_ID']}&client_secret=#{ENV['FOURSQUARE_SECRET']}")
   	response['response']['venue']['tips']['groups'][0]['items'].each do |review| 
   		new_review = Review.new()
   		new_review.body = review['text']
