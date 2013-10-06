@@ -3,3 +3,11 @@
   User: #{@user.name}
 %p
   Email: #{@user.email if @user.email}
+.employee-content
+  %p
+    Employees: 
+  %button.btn.new-employees Add New
+%ul.employees
+- @user.employees.each do |employee|
+  %li
+    %a{href: "#{employee.id}"} employee.name
