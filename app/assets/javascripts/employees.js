@@ -26,6 +26,6 @@ $(document).ready( function() {
 
 
 	function updateEmployees(response) {
-		$('.employees').html(response);
+		$('.charts').html(response);
 	}
 })
